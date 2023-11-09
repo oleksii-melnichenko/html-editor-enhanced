@@ -446,6 +446,7 @@ class _HtmlEditorWidgetMobileState extends State<HtmlEditorWidget> {
                             window.flutter_inappwebview.callHandler('FormatSettings', message);
                           }
                           document.querySelector('.note-statusbar').style.display = 'none';
+                          document.getElementsByClassName('note-editable')[0].style.color = 'white';
                       """);
                       await controller.evaluateJavascript(
                           source:

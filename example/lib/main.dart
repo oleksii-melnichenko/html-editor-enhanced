@@ -40,6 +40,7 @@ class _HtmlEditorExampleState extends State<HtmlEditorExample> {
         }
       },
       child: Scaffold(
+        backgroundColor: Colors.indigo,
         appBar: AppBar(
           title: Text(widget.title),
           elevation: 0,
@@ -71,6 +72,7 @@ class _HtmlEditorExampleState extends State<HtmlEditorExample> {
                 htmlEditorOptions: HtmlEditorOptions(
                   hint: 'Your text here...',
                   shouldEnsureVisible: true,
+                  darkMode: true,
                   //initialText: "<p>text content initial, if any</p>",
                 ),
                 htmlToolbarOptions: HtmlToolbarOptions(
